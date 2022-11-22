@@ -1,0 +1,29 @@
+﻿{% extends "layout.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block headline %}
+{{ message }}
+{% endblock %}
+
+{% block content %}
+
+<form method="post" action="{{ url_for('tasks') }}">
+	<input type="submit" value="Color" name="color" class="btn btn-outline-secondary" />
+	<input type="submit" value="QR" name="qr" class="btn btn-outline-secondary"/>
+	<input type="submit" value="Crack" name="crack_detect" class="btn btn-outline-secondary"/>
+	<input type="submit" value="DepthColor" name="depth_color" class="btn btn-outline-secondary"/>
+	<input type="submit" value="Infra1" name="infra1" class="btn btn-outline-secondary"/>
+	<input type="submit" value="Infra2" name="infra2" class="btn btn-outline-secondary"/>
+	<input type="submit" value="Screenshot" name="click" class="btn btn-outline-secondary"/>	
+</form>
+<img src="{{ url_for('video_feed') }}" class="img-fluid" alt="video_feed">
+
+
+{% endblock %}
+
+{% block footer %}
+@Realsense Application
+{% endblock %}

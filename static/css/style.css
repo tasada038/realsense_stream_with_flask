@@ -1,0 +1,102 @@
+﻿body{
+    margin: 15px;
+    background-color:rgb(255, 255, 255);    /* 背景色 */
+}
+h2 {
+    color: black;    /* テキストカラー */
+    font-size: 32pt;
+    margin:0px;
+}
+p{
+    font-size: 16pt;
+}
+
+div.logout{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+
+.btn_wrap{
+    display:inline-block;
+    position: relative;
+}
+.btn_wrap input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+.btn_wrap label{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #eee;
+    display: inline-block;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn_wrap label:hover,
+.btn_wrap input:checked + label{
+    background: #fac24a;
+    color: #FFF;
+}
+.btn_wrap input:focus + label{
+    box-shadow: 0 0 4px #fac042;
+}
+
+
+.btn2_wrap{
+    display:inline-block;
+    position: relative;
+}
+.btn2_wrap input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+.btn2_wrap label{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #eee;
+    display: inline-block;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn2_wrap label:hover,
+.btn2_wrap input:checked + label{
+    background: #f564ee;
+    color: #FFF;
+}
+.btn2_wrap input:focus + label{
+    box-shadow: 0 0 4px #f564ee;
+}
+
+
+.btn3_wrap{
+    display:inline-block;
+    position: relative;
+}
+.btn3_wrap input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+.btn3_wrap label{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #eee;
+    display: inline-block;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn3_wrap label:hover,
+.btn3_wrap input:checked + label{
+    background: rgb(255,223,133);
+    color: #FFF;
+}
+.btn3_wrap input:focus + label{
+    box-shadow: 0 0 4px rgb(255,223,133);
+}
+
